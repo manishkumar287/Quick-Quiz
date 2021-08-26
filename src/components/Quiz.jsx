@@ -6,11 +6,11 @@ function Quiz(){
 
     const [currentQuestion, setQuestion]=useState(0);
     const [count, setCount]=useState(0);
-    const [clicked, setClicked]=useState(false);
+//     const [clicked, setClicked]=useState(false);
     const [show,setShow]=useState(false);
     
     function nextClick(){
-        setClicked(false);
+        //setClicked(false);
         if(currentQuestion<Questions.length-1){
             setQuestion(currentQuestion+1);
         }
@@ -24,7 +24,7 @@ function Quiz(){
             setCount(count+1);
         }
         else{
-            setClicked(true);
+            //setClicked(true);
         }
     }
 
